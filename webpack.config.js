@@ -9,13 +9,12 @@ module.exports = {
     filename: "bundle.js"
   },
   resolve: {
-    /* ... */
     extensions: [" ", ".js", ".jsx"]
   },
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.jsx|\.js$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader"
